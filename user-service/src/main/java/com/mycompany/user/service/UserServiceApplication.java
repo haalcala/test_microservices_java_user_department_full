@@ -5,7 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+
 @SpringBootApplication
+
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
@@ -13,6 +16,7 @@ public class UserServiceApplication {
 	}
 
 	@Bean
+//	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
