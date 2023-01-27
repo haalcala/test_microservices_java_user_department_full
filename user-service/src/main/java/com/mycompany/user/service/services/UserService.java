@@ -38,7 +38,8 @@ public class UserService {
 //        List<ServiceInstance> instances = discoveryClient.getInstances("DEPARTMENT_SERVICE");
 //
 //        String url = instances.get(0).getUri()+"/departments/" + user.getDepartmentId();
-        String url = "http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId();
+//        String url = "http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId();
+        String url = "http://API-GATEWAY/departments/" + user.getDepartmentId();
 
         log.info("Trying to access url:" + url);
 
